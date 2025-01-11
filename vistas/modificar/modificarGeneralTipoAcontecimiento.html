@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><h1>General</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <a href="../tablas/tablaGeneralTipoAcontecimiento.html" class="button_atras"><button >Atras</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <h3>Modificar - Tipo Acontecimiento</h3>
+                </div>
+                <form action="" class="container_form">
+                    <div class="codigo_id form_items">
+                        <label for="cod_tip_aco" >Codigo de la Tipo Acontecimiento</label>
+                        <input type="number" id="cod_tip_aco" name="cod_tip_aco" readonly>
+                    </div>
+                    <div class="form_items">
+                        <label for="nom_tip_aco" >Nombre de la Tipo Acontecimiento</label>
+                        <input type="text" id="nom_tip_aco" name="nom_tip_aco" >
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_cat_aco" >Codigo de la Categoria Acontecimiento</label>
+                        <input type="number" id="fky_cat_aco" name="fky_cat_aco">
+                    </div>
+                    <div class="form_items">
+                        <label for="est_tip_aco">Estatus de la Tipo Acontecimiento</label>
+                        <select name="est_tip_aco" id="est_tip_aco">
+                            <option selected>Seleccionar..</option>
+                            <option value="A">Activo</option>
+                            <option value="I">Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="container_button">
+                        <button class="btn_confirmar" type="submit">Confirmar</button>
+                        <button class="btn_cancelar" type="reset" >Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+</html>

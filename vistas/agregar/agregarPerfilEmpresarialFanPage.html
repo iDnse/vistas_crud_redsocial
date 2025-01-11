@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y enlaces a estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Título del perfil empresarial -->
+            <a href="#"><h1>Perfil Empresarial</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <!-- Enlaces de navegación -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <!-- Submenú de perfil personal -->
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <!-- Submenú de perfil empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <!-- Submenú general -->
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <!-- Submenú de ubicación -->
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <!-- Submenú de seguridad -->
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <!-- Botón para regresar a la tabla de Fan Page -->
+            <a href="../tablas/tablaPerfilEmpresarialFanPage.html" class="button_atras"><button>Atras</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <!-- Título de la sección -->
+                    <h3>Agregar - Fan Page</h3>
+                </div>
+                <form action="" class="container_form">
+                    <!-- Campo para el código de la Fan Page -->
+                    <div class="codigo_id form_items">
+                        <label for="cod_fan_pag">Codigo de Fan Page</label>
+                        <input type="number" id="cod_fan_pag" name="cod_fan_pag" readonly>
+                    </div>
+                    <!-- Campo para el nombre de la Fan Page -->
+                    <div class="form_items">
+                        <label for="nom_fan_pag">Nombre de la Fan Page</label>
+                        <input type="text" id="nom_fan_pag" name="nom_fan_pag">
+                    </div>
+                    <!-- Campo para la descripción de la Fan Page -->
+                    <div class="form_items">
+                        <label for="des_fan_pag">Descripcion de la Fan Page</label>
+                        <textarea name="des_fan_pag" id="des_fan_pag"></textarea>
+                    </div>
+                    <!-- Campo para la foto de perfil de la Fan Page -->
+                    <div class="form_items">
+                        <label for="per_fan_pag">Foto de Perfil Empresa</label>
+                        <input type="text" id="per_fan_pag" name="per_fan_pag">
+                    </div>
+                    <!-- Campo para la fecha de creación de la Fan Page -->
+                    <div class="form_items">
+                        <label for="fec_fan_pag">Fecha de creacion Fan Page</label>
+                        <input type="date" id="fec_fan_pag" name="fec_fan_pag" readonly>
+                    </div>
+                    <!-- Campo para el estatus de la Fan Page -->
+                    <div class="form_items">
+                        <label for="est_fan_pag">Estatus del Fan Page</label>
+                        <select name="est_fan_pag" id="est_fan_pag">
+                            <option value="0" selected>Seleccionar..</option>
+                            <option value="A">Activo</option>
+                            <option value="I">Inactivo</option>
+                        </select> 
+                    </div>
+                    <!-- Botones para confirmar o cancelar -->
+                    <div class="container_button">
+                        <button class="btn_confirmar" type="submit">Confirmar</button>
+                        <button class="btn_cancelar" type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+    <script src="../../js/validacionPerfilEmpresarialFanPage.js"></script>
+</body>
+</html>

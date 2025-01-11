@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><h1>Perfil Personal</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <a href="../tablas/tablaPerfilPersonalMultimedia.html" class="button_atras"><button >Atras</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <h3>Agregar - Multimedia</h3>
+                </div>
+                <form action="" class="container_form">
+                    <div class="codigo_id form_items">
+                        <label for="cod_mul" >Codigo de Multimedia</label>
+                        <input type="text" id="cod_mul" name="cod_mul">
+                    </div>
+                    <div class="form_items">
+                        <label for="url_mul" >Direccion electronica</label>
+                        <input type="text" id="url_mul" name="url_mul">
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_pub">Codigo de la Publicacion</label>
+                        <input type="text" id="fky_pub" name="fky_pub">
+                    </div>
+                    <div class="form_items">
+                        <label for="est_mul">Estatus</label>
+                        <select name="est_mul" id="est_mul">
+                            <option selected>Seleccionar..</option>
+                            <option value="P">Publicado Correctamente</option>
+                            <option value="X"> Suspendida la imagen o video por infringir normas comunitarias
+                            </option>
+                            <option value="R"> Restringida para pùblico sensible</option>
+                            <option value="S">Publicaciòn de temas polìticos o
+                                sociales.</option>
+                        </select>
+                    </div>
+                    <div class="container_button">
+                        <button class="btn_confirmar">Confirmar</button>
+                        <button class="btn_cancelar" type="reset" >Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+</body>
+</html>

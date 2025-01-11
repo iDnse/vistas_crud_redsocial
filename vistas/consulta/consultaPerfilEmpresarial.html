@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>   
+    <header>
+        <!-- Barra de navegacion, incluye titulo  y barra de desplazamiento para ir a otras bases de datos paginas -->
+        <nav>
+            <!-- Titulo Principal, en paginas tipo "consulta" tiene el nombre de la base de datos, en paginas axiliares el nombre cambia por el de la "Schema"-->
+            <a href="#"><h1>RedSocial</h1></a>
+            <!-- barra de desplazamiento -->
+            <div class="navbar_list">
+                <ul>
+                    <!-- Home redirige al index, aplica para todas las paginas-->
+                    <li><a href="../index.html">Home</a></li>
+                    <!-- Dropdowns, redirigen a las paginas de las tablas de la base de datos-->
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <!-- Dropdowns, redirigen a las paginas de las tablas de la base de datos-->
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <!-- Dropdowns, redirigen a las paginas de las tablas de la base de datos-->
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <!-- Dropdowns, redirigen a las paginas de las tablas de la base de datos-->
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <!-- Dropdowns, redirigen a las paginas de las tablas de la base de datos-->
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Botones auxiliares , redirigen a la pagina index  -->
+        <div class="container_btn_listar">
+            <a href="../index.html" class="button_inicio"><button >Atras</button></a>
+        </div>
+        <section>
+            <!-- Container Principal de la Card -->
+            <div class="container_card">
+                <div class="card_title">
+                    <!-- Titulo de la Schema que estamos consultando -->
+                    <h3>Perfil Empresarial</h3>
+                </div>
+                <!-- Lista de las tablas disponibles de Schema consultada -->
+                <!-- Se diseñaron de dos en dos, la cuadrilla de los botones-->
+                <div class="container_list">
+                    <ul>
+                        <div>
+                            <!-- Redirige a la tabla Categoria, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html"><li><button>Categoria</button></li></a>
+                            <!-- Redirige a la tabla Categoria Fan Page, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html"><li><button>Cat. Fan Page</button></li></a>
+                        </div>
+                        <div>
+                            <!-- Redirige a la tabla Contacto, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html"><li><button>Contacto</button></li></a>
+                            <!-- Redirige a la tabla FanPage, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html"><li><button>Fan Page</button></li></a>
+                        </div>
+                        <div>
+                            <!-- Redirige a la tabla Multimedia, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html"><li><button>Multimedia</button></li></a>
+                            <!-- Redirige a la tabla Publicacion, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html"><li><button>Publicacion</button></li></a>
+                        </div>
+                        <div>
+                            <!-- Redirige a la tabla Seguidor, del Schema Perfil Empresarial -->
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html"><li><button>Seguidor</button></li></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+</body>
+</html>

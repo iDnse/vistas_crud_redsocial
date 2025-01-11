@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y enlaces a estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navegación principal -->
+            <a href="#"><h1>Perfil Empresarial</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <!-- Elementos de la barra de navegación -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <!-- Botones de navegación secundaria -->
+            <a href="../consulta/consultaPerfilEmpresarial.html" class="button_inicio"><button >Atras</button></a>
+            <a href="../agregar/agregarPerfilEmpresarialContacto.html" class="button_agregar"><button >Agregar</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <h3>Contacto</h3>
+                </div>
+                <table class="container_table">
+                    <thead>
+                        <tr>
+                            <!-- Encabezados de la tabla -->
+                            <!-- Codigo Contacto -->
+                            <th title="Codigo Contacto">cod_con</th>
+                            <!-- Descripcion de Contacto -->
+                            <th title="Descripcion de Contacto">des_con</th>
+                            <!-- Fecha de Actualizacion de Contacto -->
+                            <th title="Fecha de Actualizacion de Contacto">act_con</th>
+                            <!-- Codigo de Tipo de Contacto -->
+                            <th title="Codigo de Tipo de Contacto">fky_tip_con</th>
+                            <!-- Codigo del Fan Page -->
+                            <th title="Codigo del Fan Page">fky_fan_pag</th>
+                            <!-- Estatus del Tipo Contacto -->
+                            <th title="Estatus del Tipo Contacto">est_con</th>
+                            <!-- Modificar Registro-->
+                            <th title="Modificar Registro">Accion1</th>
+                            <!-- Eliminar Registro -->
+                            <th title="Eliminar Registro">Accion2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Celdas de la tabla -->
+                            <td id="cod_con" name="cod_con"></td>
+                            <td id="des_con" name="des_con"></td>
+                            <td id="act_con" name="act_con"></td>
+                            <td id="fky_tip_con" name="fky_tip_con"></td>
+                            <td id="fky_fan_pag" name="fky_fan_pag"></td>
+                            <td id="est_con" name="est_con"></td>
+                            <td><a href="../modificar/modificarPerfilEmpresarialContacto.html" class="button_modificar"><button >Modificar</button></a></td>
+                            <td><a href="" class="button_eliminar"><button >Eliminar</button></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+</body>
+</html>

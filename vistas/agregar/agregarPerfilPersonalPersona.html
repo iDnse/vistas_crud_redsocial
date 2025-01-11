@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><h1>Perfil Personal</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <a href="../tablas/tablaPerfilPersonalPersona.html" class="button_atras"><button >Atras</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <h3>Agregar - Persona</h3>
+                </div>
+                <form action="" class="container_form">
+                    <div class="codigo_id form_items">
+                        <label for="cod_per" >Codigo de Persona</label>
+                        <input type="number" id="cod_per" name="cod_per" readonly>
+                    </div>
+                    <div class="form_items">
+                        <label for="nm1_per">Ingrese su primer nombre</label>
+                        <input type="text" name="nm1_per" id="nm1_per" placeholder="Primer Nombre" >
+                    </div>
+                    <div class="form_items">
+                        <label for="nm2_pe">Ingrese su segundo nombre</label>
+                        <input type="text" name="nm2_per" id="nm2_per" placeholder="Segundo Nombre" >
+                    </div>
+                    <div class="form_items">
+                        <label for="ap1_per">Ingrese su primer apellido</label>     
+                        <input type="text" name="ap1_per" id="ap1_per
+                    " placeholder="Primer Apellido" >
+                    </div>
+                    <div class="form_items">
+                        <label for="ap2_perr">Ingrese su segundo apellido</label>
+                        <input type="text" name="ap2_per" id="ap2_per" placeholder="Segundo Apellido" >
+                    </div>
+                    <div class="form_items">
+                        <label for="nac_per">Ingrese su fecha de nacimiento</label>
+                        <input type="date" name="nac_per" id="nac_per"  >
+                    </div>
+                    <div class="form_items">
+                        <label for="sex_per">Seleccione su sexo</label>
+                        <select name="sex_per" id="sex_per" >
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="O">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form_items">
+                        <label for="per_per">Seleccionar foto de perfil</label>
+                        <input type="file" name="per_per" id="per_per"  >
+                    </div>
+                    <div class="form_items">
+                        <label for="por_per">Seleccionar foto de portada</label>
+                        <input type="file" name="por_per" id="por_per"  >
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_usu">Seleccione Usuario</label>
+                        <select  name="fky_usu" id="fky_usu" >
+                            <option value="">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="container_button">
+                        <button class="btn_confirmar">Confirmar</button>
+                        <button class="btn_cancelar" type="reset" >Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+</body>
+</html>
+                        

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>RedSocial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><h1>Perfil Empresarial</h1></a>
+            <div class="navbar_list">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilPersonal.html" class="dropbtn">P. Personal</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilPersonalContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilPersonalMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilPersonalPersona.html">Persona</a>
+                            <a href="../tablas/tablaPerfilPersonalPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilPersonalSolicitud.html">Solicitud</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaPerfilEmpresarial.html" class="dropbtn">P. Empresarial</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaPerfilEmpresarialCategoria.html">Categoria</a>
+                            <a href="../tablas/tablaPerfilEmpresarialCategoriaFanPage.html">Cat. Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialContacto.html">Contacto</a>
+                            <a href="../tablas/tablaPerfilEmpresarialFanPage.html">Fan Page</a>
+                            <a href="../tablas/tablaPerfilEmpresarialMultimedia.html">Multimedia</a>
+                            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html">Publicacion</a>
+                            <a href="../tablas/tablaPerfilEmpresarialSeguidor.html">Seguidor</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaGeneral.html" class="dropbtn">General</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaGeneralCategoriaAcontecimiento.html">Categoria Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoAcontecimiento.html">Tipo Acontecimiento</a>
+                            <a href="../tablas/tablaGeneralTipoContacto.html">Tipo Contacto</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaUbicacion.html" class="dropbtn">Ubicacion</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaUbicacionContinente.html">Continente</a>
+                            <a href="../tablas/tablaUbicacionPais.html">Pais</a>
+                            <a href="../tablas/tablaUbicacionEstado.html">Estado</a>
+                            <a href="../tablas/tablaUbicacionZonaHoraria.html">Zona Horaria</a>
+                            <a href="../tablas/tablaUbicacionCiudad.html">Ciudad</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../consulta/consultaSeguridad.html" class="dropbtn">Seguridad</a>
+                        <div class="dropdown-content">
+                            <a href="../tablas/tablaSeguridadRolFanPage.html">Rol Fan Page</a>
+                            <a href="../tablas/tablaSeguridadUsuario.html">Usuario</a>
+                            <a href="../tablas/tablaSeguridadRol.html">Rol</a>
+                            <a href="../tablas/tablaSeguridadTipoPrivacidad.html">Tipo Privacidad</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_btn_listar">
+            <a href="../tablas/tablaPerfilEmpresarialPublicacion.html" class="button_atras"><button >Atras</button></a>
+        </div>
+        <section>
+            <div class="container_card">
+                <div class="card_title">
+                    <h3>Modificar - Publicacion</h3>
+                </div>
+                <form action="" class="container_form">
+                    <div class="form_items">
+                        <label for="cod_pub" >Codigo de Publicacion</label>
+                        <input type="number" id="cod_pub" name="cod_pub" readonly>
+                    </div>
+                    <div class="form_items">
+                        <label for="fec_pub" >Fecha de la Publicacion</label>
+                        <input type="datetime-local" id="fec_pub" name="fec_pub">
+                    </div>
+                    <div class="form_items">
+                        <label for="tit_pub" >Titulo de la Publicacion</label>
+                        <input type="text" id="tit_pub" name="tit_pub">
+                    </div>
+                    <div class="form_items">
+                        <label for="des_pub">Descripcion de Publicacion</label>
+                        <textarea name="des_pub" id="des_pub"></textarea>
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_ciu">Codigo de Ciudad</label>
+                        <select name="fky_ciu" id="fky_ciu">
+                            <option selected>Seleccionar..</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_per">Codigo de Persona</label>
+                        <select name="fky_per" id="fky_per">
+                            <option selected>Seleccionar..</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_tip_aco">Codigo de Tipo Acontecimiento</label>
+                        <select name="fky_tip_aco" id="fky_tip_aco">
+                            <option selected>Seleccionar..</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="form_items">
+                        <label for="fky_fan_pag">Codigo de Fan Page</label>
+                        <select name="fky_fan_pag" id="fky_fan_pag">
+                            <option selected>Seleccionar..</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="form_items">
+                        <label for="est_pub">Estatus de la Publicacion</label>
+                        <select name="est_pub" id="est_pub">
+                            <option selected>Seleccionar..</option>
+                            <option value="A">Activo</option>
+                            <option value="I">Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="container_button">
+                        <button class="btn_confirmar">Confirmar</button>
+                        <button class="btn_cancelar" type="reset" >Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo_derechos">Design by idnse❤️</p>
+    </footer>
+    <script src="../../js/validacionPerfilEmpresarialPublicacion.js"></script>
+</body>
+</html>
